@@ -6,6 +6,7 @@
     <string name="title_major_city">Major City</string>
     <string name="title_time">Time</string>
 
+    <string name="title_new_Delhi">New Delhi</string>
     <string name="title_mexico_city">Mexico City</string>
     <string name="title_new_york">New York</string>
     <string name="title_london">London</string>
@@ -27,7 +28,7 @@
     <string name="title_kuala_lampur">Kuala Lumpur</string>
 
     <string-array name="time_diff_array">
-        <item>@string/title_mexico_city</item>
+        <item>@string/title_new_Delhi</item>
         <item>@string/title_new_york</item>
         <item>@string/title_london</item>
         <item>@string/title_paris</item>

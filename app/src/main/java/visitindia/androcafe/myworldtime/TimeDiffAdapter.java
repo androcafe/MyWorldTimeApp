@@ -60,11 +60,16 @@ public class TimeDiffAdapter extends BaseAdapter{
     private DateFormat setTime(String s) {
         TimeZone timeZone = null;
 
+        //set City codes to get time for respective city
+        if(s.equalsIgnoreCase("New Delhi"))
+        {
+            timeZone=TimeZone.getTimeZone("Asia/Calcutta");
+        }
         if(s.equalsIgnoreCase("Mexico City"))
         {
             timeZone=TimeZone.getTimeZone("America/Mexico_City");
         }
-        if(s.equalsIgnoreCase("tokyo")) {
+        if(s.equalsIgnoreCase("Tokyo")) {
             timeZone = TimeZone.getTimeZone("Asia/Tokyo");
         }
         if(s.equalsIgnoreCase("new york")) {
@@ -104,7 +109,7 @@ public class TimeDiffAdapter extends BaseAdapter{
         {
             timeZone=TimeZone.getTimeZone("Europe/London");
         }
-        if(s.equalsIgnoreCase("kuala_Lumpur"))
+        if(s.equalsIgnoreCase("Kuala Lumpur"))
         {
             timeZone=TimeZone.getTimeZone("Asia/Kuala_Lumpur");
         }
@@ -131,6 +136,10 @@ public class TimeDiffAdapter extends BaseAdapter{
         if(s.equalsIgnoreCase("baghdad"))
         {
             timeZone=TimeZone.getTimeZone("Asia/Baghdad");
+        }
+        if(s.equalsIgnoreCase("canberra"))
+        {
+            timeZone=TimeZone.getTimeZone("Australia/Canberra");
         }
 
 
